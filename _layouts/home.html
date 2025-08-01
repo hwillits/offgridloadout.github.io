@@ -1,0 +1,40 @@
+---
+layout: home
+title: Off-Grid Loadout
+subtitle: Tactical gear reviews, survival tech, and Amazon affiliate picks.
+---
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div class="col-span-2">
+    <h2 class="text-xl font-bold">Latest Reviews</h2>
+    {% for post in site.posts limit:4 %}
+      <div class="my-4 p-4 border rounded-xl shadow">
+        <h3 class="text-lg font-semibold"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="text-sm text-gray-600">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+        <a href="{{ post.url }}" class="text-blue-600">Read more →</a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <aside>
+    <h2 class="text-xl font-bold">Gear Categories</h2>
+    <ul class="list-disc ml-5 mt-2">
+      <li><a href="/categories/survival-gear">Survival Gear</a></li>
+      <li><a href="/categories/off-grid-tech">Off-Grid Tech</a></li>
+      <li><a href="/categories/edc">Everyday Carry</a></li>
+      <li><a href="/categories/tools">Tools</a></li>
+    </ul>
+
+    <div class="mt-6">
+      <h2 class="text-xl font-bold">About This Site</h2>
+      <p class="mt-2 text-sm">
+        Off-Grid Loadout is your trusted source for hands-on gear reviews and survival tech insights. We field-test products and connect you with Amazon affiliate links for easy, curated purchases.
+      </p>
+    </div>
+  </aside>
+</div>
+
+<footer class="mt-10 border-t pt-6 text-center text-xs text-gray-500">
+  &copy; {{ site.time | date: '%Y' }} OffGridLoadout.com — Powered by GitHub Pages
+</footer>
