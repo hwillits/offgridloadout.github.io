@@ -4,10 +4,11 @@ baseurl: "" # leave this blank for GitHub Pages root
 url: "https://offgridloadout.com"
 theme: minima
 
+permalink: /:year/:month/:day/:title/
+
 # This tells Jekyll to use the home layout by default
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: home
