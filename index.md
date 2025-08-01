@@ -1,4 +1,7 @@
-# Off-Grid Loadout
+---
+layout: home
+title: Off-Grid Loadout
+---
 
 Welcome to the official Off-Grid Loadout site.
 
