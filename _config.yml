@@ -1,0 +1,17 @@
+title: Off-Grid Loadout
+description: Tactical gear reviews and survival tools
+baseurl: "" # leave this blank for GitHub Pages root
+url: "https://offgridloadout.com"
+theme: minima
+
+# This tells Jekyll to use the home layout by default
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: home
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
